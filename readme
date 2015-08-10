@@ -1,0 +1,5 @@
+运行步骤：
+1、执行mvn compile
+2、执行
+mvn exec:java -Dexec.mainClass="com.hand._08_10Exam02.App"
+3、GitHub链接：https://github.com/LGSGitHub/2015-08-10Exam02.git
