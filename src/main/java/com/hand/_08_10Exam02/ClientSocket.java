@@ -36,12 +36,17 @@ public class ClientSocket extends Thread {
 			byte[] b = new byte[50];
 			int len = 0;
 
-			System.out.println("下载中，感谢您的耐心等待……");
+			String wait = "下载中，感谢您的耐心等待……";
+			System.out.println(wait);
+			//在客户端输出文字
+			socket.getOutputStream().write(wait.getBytes("GBK"));
 			//利用字节数组一个一个地写入，边写入边写出
 			while ((len = bis.read(b)) != -1) {
 				bos.write(b);
 			}
-			System.out.println("done!!!");
+			String finish = "下载完成，文件已经保存到本工程的根目录！";
+			System.out.println(finish);
+			socket.getOutputStream().write(finish.getBytes("GB2312"));
 
 			bos.close();
 			fos.close();

@@ -2,4 +2,6 @@
 1、执行mvn compile
 2、执行
 mvn exec:java -Dexec.mainClass="com.hand._08_10Exam02.App"
-3、GitHub链接：https://github.com/LGSGitHub/2015-08-10Exam02.git
+3、另外打开一个cmd，执行telnet localhost 12345
+4、看到有文字输出表示文件下载完毕
+GitHub链接：https://github.com/LGSGitHub/2015-08-10Exam02.git
